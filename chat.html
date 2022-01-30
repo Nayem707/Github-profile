@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="chat.css">
+</head>
+<body>
+
+<h1>আমাদের সাথে যোগাযোগ করুন।</h1>
+<p>আপনি আমাদের একজন পরিচিত ব্যক্তি আপনার জন্য আমাদের সহায়তা সর্বদা প্রস্তুত থাকবে।</p>
+<p> যেহেতু আপনি আমাদের প্রতিষ্ঠানে যুক্ত হয়েছেন। আমরা আপনার মঙ্গল কামনা করি যদি কিনা আপনি আমাদের ব্যবসায় স্বাভাবিক পরিশ্রম করেন।</p>
+<h3> দয়া করে আপনি নিচে চেট বাটনে ক্লিক করুন! এবং একটি বার্তা পাঠান যেনো আপনার সমস্যা নির্ণয় করতে পারি।</h3>
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
